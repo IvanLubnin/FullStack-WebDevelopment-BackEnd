@@ -1,0 +1,45 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OTdlZjJkMDAzMDlmNWU4MDIyMGVhZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczODAxMDUwNCwiZXhwIjoxNzM4MDE0MTA0fQ.OS2ACQ73N_Y_DAtfxIri96W6gNryZxBQht48uG2U7eY
+
+###
+POST   http://localhost:3004/auth/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "admin123"
+}
+
+###(GET /movies)
+GET http://localhost:3004/movies
+Content-Type: application/json
+
+###(GET /movies/:id)
+GET http://localhost:3004/movies/67817eb751656fd2762f5be4
+Content-Type: application/json
+
+###(POST /movies)
+POST http://localhost:3004/movies
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "Iron Man",
+  "director": "Jon Favreau",
+  "year": 2008
+}
+
+###(PUT /movies/:id)
+PUT http://localhost:3004/movies/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "Inception",
+  "director": "Christopher Nolan",
+  "year": 2010
+}
+
+###(DELETE /movies/:id)
+DELETE http://localhost:3004/movies/605c72ef3b8e5a001f7e7b6a
+Content-Type: application/json
+Authorization: Bearer {{token}}

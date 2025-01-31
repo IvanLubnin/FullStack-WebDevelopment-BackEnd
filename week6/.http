@@ -1,0 +1,74 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OTdlZjJkMDAzMDlmNWU4MDIyMGVhZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczODA5MDU2MywiZXhwIjoxNzM4MDk0MTYzfQ.dqjNebuYw63ri8qOZcx8POvGHrC03EyX4KjuuE_IqfY
+
+
+POST https://localhost:3443/auth/register
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin123",
+  "role": "admin"
+}
+
+###
+POST   https://localhost:3443/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin123"
+
+}
+
+###
+POST https://localhost:3443/auth/register
+Content-Type: application/json
+
+{
+  "username": "ivan",
+  "password": "12345",
+  "role": "regular"
+}
+
+###
+POST   https://localhost:3443/auth/login
+Content-Type: application/json
+
+{
+    "username": "ivan",
+    "password": "12345"
+}
+
+
+###(GET /items)
+GET https://localhost:3004/items
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###(GET /items/:id)
+GET https://localhost:3004/items/67817eb751656fd2762f5be4
+Content-Type: application/json
+
+###(POST /items)
+POST https://localhost:3004/items
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+###(PUT /items/:id)
+PUT https://localhost:3004/items/679d39f706de30ed97e6ca94
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "_id": "679d39f706de30ed97e6ca94",
+    "title": "Day D",
+    "date": "06.06.1944",
+    "location": "Normandie",
+    "__v": 0
+},
+
+###(DELETE /items/:id)
+DELETE https://localhost:3004/items/6798f550dee8f86df92e38d8
+Content-Type: application/json
+Authorization: Bearer {{token}}

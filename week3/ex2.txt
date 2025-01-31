@@ -1,0 +1,10 @@
+
+- I went to the MongoDB Atlas website and created an account using my email.
+- Verified my email to activate the account.
+- Logged into MongoDB Atlas and clicked on "Build a Cluster."
+- Chose the Free Tier option and selected AWS as the cloud provider with a region close to me.
+- Inserted Sample Data
+- Added three example movie documents manually into the movies collection
+- Went to the "Connect" button in the Database section.
+- Chose "Connect Your Application" and selected Node.js as the driver.
+- Saved the connection string for future use

@@ -1,0 +1,77 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OTdlZjJkMDAzMDlmNWU4MDIyMGVhZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczODA5MDU2MywiZXhwIjoxNzM4MDk0MTYzfQ.dqjNebuYw63ri8qOZcx8POvGHrC03EyX4KjuuE_IqfY
+
+
+POST https://localhost:3443/auth/register
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin123",
+  "role": "admin"
+}
+
+###
+POST   https://localhost:3443/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin123"
+
+}
+
+###
+POST https://localhost:3443/auth/register
+Content-Type: application/json
+
+{
+  "username": "ivan",
+  "password": "12345",
+  "role": "regular"
+}
+
+###
+POST   https://localhost:3443/auth/login
+Content-Type: application/json
+
+{
+    "username": "ivan",
+    "password": "12345"
+}
+
+
+###(GET /movies)
+GET https://localhost:3004/movies
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###(GET /movies/:id)
+GET https://localhost:3004/movies/67817eb751656fd2762f5be4
+Content-Type: application/json
+
+###(POST /movies)
+POST https://localhost:3004/movies
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "Iron Man 2",
+  "director": "Jon Favreau",
+  "year": 2015
+}
+
+###(PUT /movies/:id)
+PUT https://localhost:3004/movies/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "Inception",
+  "director": "Christopher Nolan",
+  "year": 2010
+}
+
+###(DELETE /movies/:id)
+DELETE https://localhost:3004/movies/6798f550dee8f86df92e38d8
+Content-Type: application/json
+Authorization: Bearer {{token}}

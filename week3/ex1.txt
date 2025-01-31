@@ -1,0 +1,68 @@
+#1
+1. Data Structure and Storage
+
+SQL
+    Data is stored in structured tables with predefined schemas (rows and columns). Each column has a
+    specified datatype, and changes to the schema can be complex.
+
+NoSQL
+    Data is stored in a more flexible format like key-value pairs, documents, wide-columns, or graphs.
+    Schemas are not strictly enforced, making it easier to handle unstructured or semi-structured data.
+
+2. Relationships
+SQL
+    Handles relationships using foreign keys and joins. It is designed for complex relational queries
+    and ensures data integrity.
+
+NoSQL
+    Relationships are typically not enforced, but some NoSQL databases (e.g., graph databases)
+    are specifically designed for highly connected data. Relationships are often handled at the
+    application level.
+
+3. Scalability
+SQL
+    Scales vertically by upgrading hardware (e.g., more CPU or RAM). Horizontal scaling (distributing
+    across multiple servers) is possible but more difficult.
+
+NoSQL
+    Scales horizontally by distributing data across multiple servers or nodes, making it more
+    suitable for handling large volumes of data.
+
+4. Use Cases
+SQL
+    Best for applications that require ACID (Atomicity, Consistency, Isolation, Durability) compliance,
+    like banking, financial systems, and inventory management.
+
+NoSQL
+    Ideal for applications with large, rapidly changing, or unstructured data, such as real-time
+    analytics, content management, and IoT applications.
+
+
+#2
+SQL Database Example: PostgreSQL
+    Primary Features:
+    - Open-source, relational database system.
+    - ACID-compliant with advanced querying capabilities.
+    - Supports JSON data for semi-structured data needs.
+    Use Cases:
+    - Enterprise-level applications, data warehouses, and analytics.
+    - Used by companies like Uber and Instagram.
+
+NoSQL Database Example: MongoDB
+    Primary Features:
+    - Document-oriented database storing data in JSON-like documents.
+    - Schema flexibility allows rapid application development.
+    - Supports horizontal scaling and sharding for big data.
+    Use Cases:
+    - Real-time analytics, content management systems, and mobile applications.
+    - Used by companies like eBay and Shutterfly.
+
+
+#3
+SQL databases use structured tables with predefined schemas, making them ideal for applications with
+structured and relational data, such as financial systems or inventory management. They handle
+relationships through foreign keys and joins and typically scale vertically by upgrading hardware. In
+contrast, NoSQL databases use flexible formats like documents or key-value pairs, which are better suited
+for unstructured or rapidly changing data, such as real-time analytics or content management. They scale
+horizontally across multiple servers and handle relationships at the application level. Examples include
+PostgreSQL (SQL) for structured data and MongoDB (NoSQL) for flexible, document-based storage.

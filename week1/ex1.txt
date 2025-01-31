@@ -1,0 +1,36 @@
+VSCode
+
+VSCode offers key features that enhance backend development. It includes an integrated debugger, 
+allowing step-by-step code inspection, which is critical for identifying and fixing bugs. VSCode 
+also supports a wide range of extensions—such as REST Client, Prettier, and ESLint—that streamline 
+backend workflows. Additionally, the built-in terminal lets developers run commands and scripts directly 
+within the editor, making it convenient to manage Node.js servers and other backend tools without 
+switching applications.
+
+Node.js and Express 
+
+Node.js is a runtime environment for running JavaScript outside the browser, enabling the creation 
+of server-side applications. Unlike traditional web servers, Node.js uses an asynchronous, non-blocking 
+model, which makes it efficient for handling multiple requests. Express, a web framework for Node.js, 
+\simplifies server development by providing an intuitive way to manage routes, use middleware, 
+and handle HTTP requests. This is much easier than using Node's built-in HTTP module, which lacks 
+these features.
+
+Extensions:
+
+- REST Client: The REST Client extension in VSCode allows developers to test API endpoints directly from 
+the editor. This is helpful for testing routes without needing external tools.
+
+- Prettier: Prettier enforces consistent code formatting, making code more readable. It can be configured 
+in VSCode settings or via a .prettierrc file, helping teams maintain a uniform style.
+
+-ESLint: ESLint catches common coding mistakes, such as undefined variables or incorrect syntax. It also 
+enforces code style rules, which reduces errors and improves readability.
+
+Using Postman:
+
+Postman is widely used for API testing, allowing developers to make requests, inspect responses, 
+and manage multiple API environments. Compared to the REST Client in VSCode, Postman offers a more 
+visual and user-friendly interface with added features, such as automated testing and API documentation 
+tools. However, REST Client is lighter and integrates directly into VSCode, which some developers find 
+convenient for simpler tasks.
